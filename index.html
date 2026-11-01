@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manish | Electronics & VLSI Engineer</title>
+  <meta name="description" content="Manish Gowda, Electronics and Communication Engineer with Analog IC Design and embedded, PCB design, experience." />
+  <meta name="theme-color" content="#eceef5" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Manish" />
+  <meta name="format-detection" content="telephone=no" />
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("portfolio-theme"); } catch (e) {}
+      if (!t) t = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.setAttribute("data-theme", t);
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+<div class="ambient" aria-hidden="true">
+  <div class="orb a"></div>
+  <div class="orb b"></div>
+  <div class="orb c"></div>
+  <div class="grain"></div>
+</div>
+<canvas id="circuit" aria-hidden="true"></canvas>
+
+<nav class="nav glass" id="nav" aria-label="Primary">
+  <span class="nav-sheen" aria-hidden="true"></span>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch to dark theme" title="Toggle theme">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <a class="cta" href="#contact">Let's Talk</a>
+  </div>
+</nav>
+
+<main>
+
+  <!-- HOME -->
+  <header class="wrap hero" id="home">
+    <div>
+      <div class="eyebrow fade-up"><span class="pulse"></span>Electronics &amp; VLSI engineer</div>
+      <h1 class="fade-up d1">Hello, I'm <span class="serif-accent">Manish</span></h1>
+      <p class="role fade-up d2">Electronics and Communication Engineer</p>
+      <p class="lede fade-up d2">Experienced in taking electronic hardware through its entire lifecycle: starting from transistor-level behavior and schematic capture, moving to PCB layout, and ending with the firmware that drives it.</p>
+      <div class="actions fade-up d3">
+        <a class="btn btn-primary" href="assets/pdf/Manish_Resume_15-10-2026.pdf" download>Download CV</a>
+        <a class="btn btn-glass" href="#contact">Let's Talk</a>
+      </div>
+    </div>
+
+    <div class="stage" id="stage">
+      <div class="photo-card" id="photoCard">
+        <div class="glass">
+          <div class="inner">
+            <img src="assets/img/profile.png" alt="Portrait of Manish Gowda" />
+            <div class="glare" id="glare"></div>
+          </div>
+          <svg class="pcb" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0 110 H110 L140 140 H250 L280 170 H400" />
+            <path d="M0 360 H90 L120 330 H220 V280 L250 250 H400" />
+            <path d="M0 230 H60 L80 210 H160 L190 240 H400" />
+            <circle cx="140" cy="140" r="5" />
+            <circle cx="250" cy="250" r="5" />
+            <circle cx="220" cy="330" r="5" />
+          </svg>
+        </div>
+      </div>
+      <div class="layer c1" data-depth="26"><div class="chip"><span class="dot"></span><div><b>PCB and Embedded</b><span>Hardware and Firmware</span></div></div></div>
+      <div class="layer c3" data-depth="18"><div class="chip"><span class="dot"></span><div><b>Analog Design</b><span>Transistor-level circuits</span></div></div></div>
+      <div class="layer c2" data-depth="40"><div class="chip"><span class="dot accent"></span><div><b>Fusion 360</b><span>PCB design</span></div></div></div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span>Scroll Down</span><i></i></div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <p class="kicker fade-up">About Me</p>
+      <h2 class="title split" data-split>Hardware, software, and the <span class="serif-accent">space in between.</span></h2>
+
+      <p class="statement" id="statement">Engineering-focused ECE graduate experienced in schematic design, simulation, and software development, creating end-to-end hardware solutions from concept to execution.</p>
+
+      <div class="stats">
+        <div class="glass fade-up stat"><div class="n"><span data-count="3">3</span>+</div><div class="l">Internships Completed</div></div>
+        <div class="glass fade-up d1 stat"><div class="n"><span data-count="8">8</span>+</div><div class="l">Projects Built</div></div>
+        <div class="glass fade-up d2 stat"><div class="n"><span data-count="4">4</span></div><div class="l">Languages: English, Kannada, Hindi, Tulu</div></div>
+      </div>
+
+      <div class="about-row">
+        <div class="pic fade-up"><img src="assets/img/microchip.jpg" alt="Manish, portrait" /></div>
+        <div>
+          <p class="body fade-up">Electronics & Communication graduate specializing in transistor-level analog circuit design and hardware development. Currently strengthening skills in fundamental analog building blocks—such as differential amplifiers, cascode current mirrors, and voltage references—alongside PCB layout and system simulation. I thrive in the space between theoretical models and real hardware, whether analyzing non-ideal transistor behavior, optimizing trace layouts, or writing low-level code to drive an embedded target</p>
+          <p class="langs fade-up d1">Karnataka, India.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <p class="kicker fade-up">Skills</p>
+      <h2 class="title split" data-split>Tools I <span class="serif-accent">think with.</span></h2>
+
+      <div class="skill-grid">
+        <div class="glass fade-up skill-group">
+          <h3>Programming</h3>
+          <div class="skill"><div class="skill-top"><span>VHDL / HDL</span><span>Moderate</span></div></div>
+          <div class="skill"><div class="skill-top"><span>Python</span><span>Intermediate</span></div></div>
+          <div class="skill"><div class="skill-top"><span>C++</span><span>Intermediate</span></div></div>
+          <div class="skill"><div class="skill-top"><span>HTML</span><span>Beginner</span></div></div>
+        </div>
+        <div class="glass fade-up d1 skill-group">
+          <h3>Tools</h3>
+          <div class="skill"><div class="skill-top"><span>Xschem / Ngspice</span><span>Intermediate</span></div></div>
+          <div class="skill"><div class="skill-top"><span>Cadence</span><span>Moderate</span></div></div>
+          <div class="skill"><div class="skill-top"><span>Fusion 360</span><span>Intermediate</span></div></div>
+          <div class="skill"><div class="skill-top"><span>MATLAB / Simulink</span><span>Intermediate</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VLSI: floating 3D model only -->
+  <section id="vlsi" class="float-section">
+    <div class="wrap">
+      <div class="float-model" id="floatModel">
+        <div id="cmosStage" role="img" aria-label="Interactive 3D cross-section of a CMOS inverter"></div>
+      </div>
+      <div class="modes float-modes" role="group" aria-label="Highlight device">
+        <button type="button" data-mode="both" aria-pressed="true">Both</button>
+        <button type="button" data-mode="nmos" aria-pressed="false">NMOS</button>
+        <button type="button" data-mode="pmos" aria-pressed="false">PMOS</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="work">
+    <div class="wrap">
+      <p class="kicker fade-up">Experience</p>
+      <h2 class="title split" data-split>Where I've <span class="serif-accent">Built things.</span></h2>
+
+      <div class="timeline">
+        <article class="exp fade-up" tabindex="0" role="button" aria-label="Open details for PCB Design Engineer" data-title="PCB Design Engineer" data-num="Feb 2025 to Jun 2025" data-img="assets/img/EVOBI.png" data-kind="logo" data-desc="Evobi Automation Pvt. Ltd, Electronic City, Bengaluru" data-details="Designed PCBs to company requirements, read circuit designs and datasheets, and worked on PCB manufacturing. Projects included boards for drones, robotics kits, e-Yantra, an AI bot head, a logic kit and sensor accessory kits. Tools: Autodesk Fusion 360 and Flux.ai." data-repo="">
+          <div class="glass">
+            <div class="when">Feb 2025 to Jun 2025</div>
+            <h3>PCB Design Engineer</h3>
+            <div class="org">Evobi Automation Pvt. Ltd, Electronic City, Bengaluru</div>
+            <img class="logo" src="assets/img/EVOBI.png" alt="Evobi Automation logo" />
+            <p class="desc">Designed PCBs to company requirements, read circuit designs and datasheets, and worked on PCB manufacturing. Projects included boards for drones, robotics kits, e-Yantra, an AI bot head, a logic kit and sensor accessory kits.</p>
+            <div class="chips"><span>Autodesk Fusion 360</span><span>Flux.ai</span></div>
+          </div>
+        </article>
+        <article class="exp fade-up" tabindex="0" role="button" aria-label="Open details for System Engineer" data-title="System Engineer" data-num="Jan 2025 to Feb 2025" data-img="assets/img/SASHA.png" data-kind="logo" data-desc="Sri Sasha Prayathi Technologies Pvt. Ltd, NITK Surathkal, Mangaluru" data-details="Converted a MATLAB RSP chain into HDL in Xilinx Vivado and verified the output waveforms. Tools: Xilinx Vivado and MATLAB." data-repo="">
+          <div class="glass">
+            <div class="when">Jan 2025 to Feb 2025</div>
+            <h3>System Engineer</h3>
+            <div class="org">Sri Sasha Prayathi Technologies Pvt. Ltd, NITK Surathkal, Mangaluru</div>
+            <img class="logo" src="assets/img/SASHA.png" alt="Sri Sasha Prayathi Technologies logo" />
+            <p class="desc">Converted a MATLAB RSP chain into HDL in Xilinx Vivado and verified the output waveforms.</p>
+            <div class="chips"><span>Xilinx Vivado</span><span>MATLAB</span></div>
+          </div>
+        </article>
+        <article class="exp fade-up" tabindex="0" role="button" aria-label="Open details for Intern" data-title="Intern" data-num="Oct 2023 to Nov 2023" data-img="assets/img/AAI.png" data-kind="logo" data-desc="Airport Authority of India, Mangaluru International Airport" data-details="Learned about radar systems and pilot to air traffic control communication, helped with equipment upkeep, and studied the technical side of airport navigation." data-repo="">
+          <div class="glass">
+            <div class="when">Oct 2023 to Nov 2023</div>
+            <h3>Intern</h3>
+            <div class="org">Airport Authority of India, Mangaluru International Airport</div>
+            <img class="logo" src="assets/img/AAI.png" alt="Airport Authority of India logo" />
+            <p class="desc">Learned about radar systems and pilot to air traffic control communication, helped with equipment upkeep, and studied the technical side of airport navigation.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <p class="kicker fade-up">Projects</p>
+      <h2 class="title split" data-split>Selected <span class="serif-accent">builds.</span></h2>
+      <p class="hint fade-up">Double-click a project or internship to see its details.</p>
+
+      <div class="projects">
+        <article class="project fade-up tilt" tabindex="0" role="button" aria-label="Open details for Differential Amplifier with Wide-Swing Cascade Mirror as Load" data-title="Differential Amplifier with Wide-Swing Cascade Mirror as Load" data-num="01" data-img="assets/img/Mini_project.svg" data-desc="A Differential Amplifier with Wide-Swing Cascade Mirror as Load with maintaining a 40dB gain in SkyWater 130 nm process" data-details="A fully differential amplifier designed for a 1.8 V supply in the SkyWater 130 nm process (sky130). It uses a PMOS input differential pair and an NMOS wide-swing cascode current mirror as the active load. The target is a minimum differential voltage gain of 40 dB while keeping every transistor in saturation and maximizing output swing." data-repo="https://github.com/ManishGowda09/PMOS-Differential-Amplifer-with-Wide-swing-cascade-mirror-as-load">
+          <div class="glass">
+            <div class="thumb"><img src="assets/img/Mini_project.svg" alt="Differential Amplifier with Wide-Swing Cascade Mirror as Load" loading="lazy" /></div>
+            <div class="meta"><div class="num">01</div><h3>Differential Amplifier with Wide-Swing Cascade Mirror as Load</h3><p>A Differential Amplifier with Wide-Swing Cascade Mirror as Load with maintaining a 40dB gain in SkyWater 130 nm process</p></div>
+          </div>
+        </article>
+        <article class="project fade-up d1 tilt" tabindex="0" role="button" aria-label="Open details for Parking Management using Nxsys DDR FPGA Board" data-title="Parking Management using Nxsys DDR FPGA Board" data-num="02" data-img="assets/img/Carparking.png" data-desc="A system for managing parking spaces using an Nxsys DDR FPGA Board." data-details="The system tracks the occupancy of parking slots and provides immediate visual feedback. It manages entry/exit logic, counts available spaces, and updates the on-board displays to inform drivers of the current status.using verilog in Xilinx" data-repo="https://github.com/ManishGowda09/Parking-Mangement-using-Nxsys-DDR-FPGA-Board">
+          <div class="glass">
+            <div class="thumb"><img src="assets/img/Carparking.png" alt="Parking-Mangement-using-Nxsys-DDR-FPGA-Board" loading="lazy" /></div>
+            <div class="meta"><div class="num">02</div><h3>Parking Management using Nxsys DDR FPGA Board</h3><p>A system for managing parking spaces using an Nxsys DDR FPGA Board.</p></div>
+          </div>
+        </article>
+        <article class="project fade-up tilt" tabindex="0" role="button" aria-label="Open details for Automated solar panel cleaner" data-title="Automated solar panel cleaner" data-num="05" data-img="assets/img/solar.jpg" data-desc="A machine that cleans solar panels on its own to keep output high." data-details="A machine that cleans solar panels automatically, so dust does not build up and reduce how much power the panels produce." data-repo="https://github.com/ManishGowda09/Solarius">
+          <div class="glass">
+            <div class="thumb"><img src="assets/img/solar.jpg" alt="Automated solar panel cleaning system" loading="lazy" /></div>
+            <div class="meta"><div class="num">05</div><h3>Automated solar panel cleaner</h3><p>A machine that cleans solar panels on its own to keep output high.</p></div>
+          </div>
+        </article>
+        <article class="project fade-up d1 tilt" tabindex="0" role="button" aria-label="Open details for Smart parking system" data-title="Smart parking system" data-num="04" data-img="assets/img/parking.jpg" data-desc="A system that tracks available parking spaces in real time." data-details="A system that tracks which parking spaces are free in real time, so drivers can see availability before they arrive." data-repo="https://github.com/ManishGowda09">
+          <div class="glass">
+            <div class="thumb"><img src="assets/img/parking.jpg" alt="Smart parking system" loading="lazy" /></div>
+            <div class="meta"><div class="num">04</div><h3>Smart parking system</h3><p>A system that tracks available parking spaces in real time.</p></div>
+          </div>
+        </article>
+        <article class="project fade-up tilt" tabindex="0" role="button" aria-label="Open details for Smart irrigation system" data-title="Smart irrigation system" data-num="03" data-img="assets/img/irrigation.png" data-desc="An IoT irrigation controller that waters fields based on sensor readings." data-details="An IoT controller that reads sensor data from the field and decides when to water, instead of watering on a fixed timer." data-repo="https://github.com/ManishGowda09">
+          <div class="glass">
+            <div class="thumb"><img src="assets/img/irrigation.png" alt="Smart irrigation system" loading="lazy" /></div>
+            <div class="meta"><div class="num">03</div><h3>Smart irrigation system</h3><p>An IoT irrigation controller that waters fields based on sensor readings.</p></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="wrap">
+      <p class="kicker fade-up">Education</p>
+      <h2 class="title split" data-split>Where it <span class="serif-accent">started.</span></h2>
+
+      <div class="edu">
+        <div class="glass fade-up">
+          <div class="yr">2026 to 2027</div>
+          <h3>Postgraduate Degree, Advanced VLSI Chip Design</h3>
+          <p>Jawaharlal Nehru Technological University, Hyderabad</p>
+          <div class="score">Ongoing</div>
+        </div>
+        <div class="glass fade-up d1">
+          <div class="yr">2021 to 2025</div>
+          <h3>Bachelor of Engineering, Electronics and Communication</h3>
+          <p>St. Joseph Engineering College, Vamanjoor, Mangaluru</p>
+          <div class="score">8.81 CGPA</div>
+        </div>
+        <div class="glass fade-up d2">
+          <div class="yr">2019 to 2021</div>
+          <h3>Pre-University, PCME</h3>
+          <p>Vivekananda Pre-University College, Nehru Nagar, Puttur</p>
+          <div class="score">91.67%</div>
+        </div>
+        <div class="glass fade-up d3">
+          <div class="yr">2019</div>
+          <h3>High School</h3>
+          <p>Vivekananda High School, Tenkila, Puttur</p>
+          <div class="score">90.4%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <p class="kicker fade-up">Contact</p>
+      <h2 class="title split" data-split>Have a board to design, or a device to <span class="serif-accent">build?</span></h2>
+      <p class="sub fade-up">Pick whichever channel suits you.</p>
+
+      <form class="contact-form glass fade-up" id="contactForm" novalidate>
+        <fieldset class="ff"><legend>Name</legend><input id="cfName" name="name" type="text" placeholder="Insert your name" autocomplete="name" required /></fieldset>
+        <fieldset class="ff"><legend>Mail</legend><input id="cfMail" name="email" type="email" placeholder="Insert your email" autocomplete="email" required /></fieldset>
+        <fieldset class="ff"><legend>About</legend><textarea id="cfMsg" name="message" rows="5" placeholder="Write your message here" required></textarea></fieldset>
+        <button class="btn btn-primary send-btn" type="submit">Send Message</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+
+      <a class="big-mail fade-up" href="mailto:manishgowda2k3@gmail.com">Let's talk</a>
+
+      <div class="channels fade-up">
+        <a class="channel glass" href="mailto:manishgowda2k3@gmail.com"><svg class="ch-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 6.5 8.5 6 8.5-6"/></svg>Email <small>manishgowda2k3@gmail.com</small></a>
+        <a class="channel glass" href="https://api.whatsapp.com/send?phone=918792084161&text=Hello%2C%20more%20information%21" target="_blank" rel="noopener"><svg class="ch-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2a8.8 8.8 0 0 0-7.6 13.2L3.3 20.7l4.4-1.1A8.8 8.8 0 1 0 12 3.2z"/><path d="M9 9.2c.2 2.6 2.4 4.9 5 5.2l1-1.1-1.6-.9-.6.6c-.9-.4-1.7-1.2-2.1-2.1l.6-.6-.9-1.6z"/></svg>WhatsApp <small>+91 87920 84161</small></a>
+        <a class="channel glass" href="https://t.me/Manish09052003" target="_blank" rel="noopener"><svg class="ch-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4.2 3.6 10.9c-.7.3-.7 1 0 1.2l4.3 1.4 1.6 5c.2.6.9.8 1.3.4l2.4-2 4.3 3.2c.5.4 1.2.1 1.4-.5L22 5.2c.2-.8-.5-1.3-1-1z"/><path d="m8.4 13.5 8.5-5.2"/></svg>Telegram <small>@Manish09052003</small></a>
+        <a class="channel glass" href="https://www.linkedin.com/in/manish-gowda-212b2725b" target="_blank" rel="noopener"><svg class="ch-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5v6M8 7.6v.1M12 16.5v-3.4a2.2 2.2 0 0 1 4.4 0v3.4M12 10.5v6"/></svg>LinkedIn</a>
+        <a class="channel glass" href="https://github.com/ManishGowda09" target="_blank" rel="noopener"><svg class="ch-icon ch-fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.78 0 12.29c0 5.21 3.44 9.63 8.2 11.19.6.11.82-.26.82-.57v-2.01c-3.34.72-4.04-1.58-4.04-1.58-.55-1.36-1.33-1.72-1.33-1.72-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.83.57C20.57 21.92 24 17.5 24 12.29 24 5.78 18.63.5 12 .5z"/></svg>GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; Manish Gowda. All rights reserved.</span>
+    <span>
+      <a href="https://www.instagram.com/m_a_n_i_s_h__gowda" target="_blank" rel="noopener">Instagram</a> &nbsp;/&nbsp;
+      <a href="https://twitter.com/Manish84974839" target="_blank" rel="noopener">Twitter</a> &nbsp;/&nbsp;
+      <a href="https://www.linkedin.com/in/manish-gowda-212b2725b" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+  </div>
+</footer>
+
+<dialog class="pmodal" id="projectDialog" aria-labelledby="pmTitle">
+  <div class="pm-wrap">
+  <img id="pmImg" src="" alt="" />
+  <div class="pm-body">
+    <div class="pm-top">
+      <span class="num" id="pmNum"></span>
+      <button class="pm-close" id="pmClose" type="button" aria-label="Close">&times;</button>
+    </div>
+    <h3 id="pmTitle"></h3>
+    <p class="pm-desc" id="pmDesc"></p>
+    <p class="pm-details" id="pmDetails"></p>
+    <a class="btn btn-primary" id="pmRepo" href="#" target="_blank" rel="noopener">View repository on GitHub</a>
+  </div>
+  </div>
+</dialog>
+
+<!-- Three.js for the 3D CMOS model (loaded from cdnjs) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
